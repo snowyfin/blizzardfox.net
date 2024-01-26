@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>Testing Site</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <div style="position:fixed;transform:rotate(-10deg);text-align:center;;bottom:5%;color: grey;z-index: 100000;" onclick="history.back()"><h><b>Return to <br>your previous <br> page!</b></h></div>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC" radius="10" src="images/stars2.png" position="0 0 -4 "></a-sky>
+      <a-entity bmfont-text="text: HELLO!; color: #333" position="0 0 -5"></a-entity>
+      <a-text value="THIS IS JUST A TEST!!!! Im figuring out how to use this, andd it'll make my shrines much easier :3" position="-2.296 2 -2"></a-text>
+    </a-scene>
+  </body>
+</html>
