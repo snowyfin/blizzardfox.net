@@ -29,6 +29,11 @@ body {
     100% { transform: rotate(0deg); }
   }
 
+  @font-face {
+    font-family: Skincake;
+    src: url(Skincake/Skincake.ttf);
+  }
+  
 #container {
     max-width: 1000px;
  
