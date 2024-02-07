@@ -59,6 +59,17 @@ body {
     display: flex;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    width: 900px}
+
+.gallery img{
+    width:250px;
+    text-align: center;
+
+}
 
 aside {
     background-color: var(--colour-1);
@@ -163,11 +174,17 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .gallery {
-    height: 500px;
+    height: 1200px;
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;}
+    justify-content: center;}
   .gallery img {
-    border: 1.5px solid darkgoldenrod;
-    margin: 2px;}
+    height: 250px;
+    width: auto;
+    margin: 2px;
+    background-color: 87C4FF;
+    transition-duration: 0.5s;
+}
+
+    .gallery img:hover {transform: scale(1.1);}
