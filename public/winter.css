@@ -1,6 +1,6 @@
 :root {
-    --colour-1: #87C4FF;
-    --colour-2: #39A7FF;
+    --colour-1: #FFCAD4;
+    --colour-2: #8E7AB5;
 }
 
 body {
@@ -154,6 +154,15 @@ a:link, a:visited, a:hover, a:active {
 
 .border{
     border: 3px dashed grey;
+}
+
+.cover {
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.cover:hover {
+    transform: scale(1.04);
 }
 .expand {letter-spacing: normal;transition-duration:0.5s;}
 .expand:hover {
