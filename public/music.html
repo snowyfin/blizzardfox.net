@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+  <script type='text/javascript'>
+    title = "Welcome to Snow's Corner ";
+    position = 0;
+
+    function scrolltitle() {
+      document.title = title.substring(position, title.length) + title.substring(0, position);
+      position++;
+      if (position > title.length) position = 0;
+      titleScroll = window.setTimeout(scrolltitle, 170);
+    }
+    scrolltitle();
+  </script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="winter.css">
+</head>
+<html>
+  <body style="padding-top: 10px;">
+    <div style="position:fixed;transform:rotate(-10deg);text-align:center;;bottom:5%;" onclick="history.back()"><h>Return to <br>your previous <br> page!</h></div>
+
+    <script>
+   
+      (function (document) {
+          'use strict';
+                var draggable = document.getElementsByClassName('draggable'),
+              draggableCount = draggable.length, 
+              i; 
+          function startDrag(evt) {
+              var diffX = evt.clientX - this.offsetLeft,
+                  diffY = evt.clientY - this.offsetTop,
+                  that = this;
+              function moveAlong(evt) {
+                  that.style.left = (evt.clientX - diffX) + 'px';
+                  that.style.top = (evt.clientY - diffY) + 'px';
+              }
+              function stopDrag() {
+                  document.removeEventListener('mousemove', moveAlong);
+                  document.removeEventListener('mouseup', stopDrag);
+              }
+      
+              document.addEventListener('mouseup', stopDrag);
+              document.addEventListener('mousemove', moveAlong);
+          }
+    
+          for (i = 0; i < draggableCount; i += 1) {
+              draggable[i].addEventListener('mousedown', startDrag);
+          }
+      }(document));
+      </script>
+    <script src="./oneko.js"></script>
+    <div id="container">
+      <div id="topBar" style="margin-bottom:-5px;position:relative;"></div>
+      <div id="flex" style="position:relative;">  
+        <main style="text-align: center; border:dashed gray; max-width:600px;margin-left:auto;margin-right:auto;">
+          <a style="font-family: Skincake;font-size: 40px;text-align: center;">Snowy's Music!</a>
+          <br>
+         <a style="text-align: justify;"> I listen to a lot of music, and it is something that is really important to me. I connect so many memories with music, and very much appreciate the composition and work that goes into each and every piece. </a>
+        </div>
+        <div style="display:flex;flex-wrap: wrap; align-content: center; padding:10px;width:1100px;">
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >Cheerleader</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/Cheerleader.png" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >Pawprint Panic!</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/d8ef4b2eefd5e29d17a0f7559ffd6dba.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >pale machine 2</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/f52f5564b5a7e74534d5c154a8ac56bb.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >pale machine</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/17081e9899764852c8f6858c1304e58f.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >Djesse Vol. 1</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/58f3d51dbe0b7e93378c7cf157d22d87.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >Djesse Vol. 2</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/59b29bc909b350fdf47fdcebf55ba1c3.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >Djesse Vol. 3</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/7d025d74466f9f7958175b180048f12d.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >In My Room</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/fadfb69d67a7cb1fffba490de57823da.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+          <div class="cassette-tape">
+            <div class="cassette-tape-label">
+              <u class="expand" >Bewitched</u>
+              <br>
+              <img class="cover" src="https://files.snowf.in/files/ALBUM-COVERS/135ebafa90c18aa9b28972fbabbe8fc7.jpg" style="max-width: 100px;">
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

@@ -33,6 +33,11 @@ body {
     font-family: Skincake;
     src: url(Skincake/Skincake.ttf);
   }
+
+  @font-face {
+    font-family: MoonFlower;
+    src: url(MoonFlower/Moon\ Flower.ttf);
+  }
   
 #container {
     max-width: 1000px;
@@ -205,3 +210,29 @@ a:link, a:visited, a:hover, a:active {
 }
 
     .gallery img:hover {transform: scale(1.1);}
+
+    .cassette-tape {
+        position:relative;
+        background-color: #AD88C6;
+        width: 306px;
+        height: 192px; 
+        z-index: 1000;
+        border-radius: 5px; 
+        text-align: center;
+        padding:5px;
+        margin:2px;
+    }
+    .cassette-tape-label {
+        background-color: #FFCAD4;
+        width: 290px;
+        height: 148px; 
+        z-index: 1000;
+        border-radius: 5px;
+         display:inline-block;
+         margin-right:auto;
+         margin-left:auto;
+        padding:5px;
+        font-family: MoonFlower;
+        font-size: 30px;
+
+    }
