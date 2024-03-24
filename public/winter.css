@@ -145,6 +145,14 @@ a:link, a:visited, a:hover, a:active {
     color:black;
 }
 
+.draggable {
+    -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -khtml-user-select: none;
+   user-select: none;
+   cursor: default;
+}
 .box {
     background-color: 87C4FF;
     border: 1px solid white;

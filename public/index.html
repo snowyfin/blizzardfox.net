@@ -18,6 +18,35 @@
 </head>
 <html>
   <body style="padding-top: 10px;">
+    <script>
+   
+      (function (document) {
+          'use strict';
+                var draggable = document.getElementsByClassName('draggable'),
+              draggableCount = draggable.length, 
+              i; 
+          function startDrag(evt) {
+              var diffX = evt.clientX - this.offsetLeft,
+                  diffY = evt.clientY - this.offsetTop,
+                  that = this;
+              function moveAlong(evt) {
+                  that.style.left = (evt.clientX - diffX) + 'px';
+                  that.style.top = (evt.clientY - diffY) + 'px';
+              }
+              function stopDrag() {
+                  document.removeEventListener('mousemove', moveAlong);
+                  document.removeEventListener('mouseup', stopDrag);
+              }
+      
+              document.addEventListener('mouseup', stopDrag);
+              document.addEventListener('mousemove', moveAlong);
+          }
+    
+          for (i = 0; i < draggableCount; i += 1) {
+              draggable[i].addEventListener('mousedown', startDrag);
+          }
+      }(document));
+      </script>
     <script src="./oneko.js"></script>
     <div id="container">
       <div id="topBar" style="margin-bottom:-5px;position:relative;"></div>
@@ -147,7 +176,7 @@
             </a>
           </div>
         </div>
-        <div style="position:absolute;height:50px;top:300px;width:250px;height:150px;z-index: 50;margin-left:970px;">
+        <div class="draggable" style="position:absolute;height:50px;top:300px;width:250px;height:150px;z-index: 50;margin-left:970px;">
           <div style="text-align:center;border: dashed grey;z-index: 50;transform: rotate(-3deg);background-color: var(--colour-1);padding: 20px; font-size: smaller;text-align: center;">
             <h class="expand" style="font-size: 20px;"><b>Obsessed<br>album:</b></h>
             <a href="https://www.youtube.com/watch?v=CzJbz9qSsd0" target="_blank">
