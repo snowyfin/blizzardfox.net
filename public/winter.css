@@ -244,3 +244,14 @@ a:link, a:visited, a:hover, a:active {
         border-radius: 50%;
         display: inline-block;
       }
+
+      .cassette-description {
+        z-index:99999;
+        background-color: var(--colour-1);
+        position: absolute;
+        right:100px;
+        top:200px;
+        border:dashed gray;
+        transform: rotate(3deg);
+        text-align: center;
+    }
