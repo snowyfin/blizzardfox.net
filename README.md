@@ -1,5 +1,5 @@
 # Snow's Corner
-Welcome to my site! It uses [Deploy to Neocities](https://github.com/marketplace/actions/deploy-to-neocities) to deploy any code I write here to [my Neocities site](https://snowenti.neocities.org). I use this for myself, and to keep my art alive.
+Welcome to my site! It uses [Deploy to Neocities](https://github.com/marketplace/actions/deploy-to-neocities) to deploy any code I write here to [my Neocities site](https://snowyfin.neocities.org). I use this for myself, and to keep my art alive.
 
 ## License
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
