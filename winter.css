@@ -7,9 +7,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     background-color: var(--colour-1);
-    background-size: 65px;
+    background-size: 100%;
+    background-origin: center;
     color: Black;
-    background-image: url(images/cats.jpg);
+    background-image: url(https://snowf.in/Castle_Town_location.png);
     margin-top:10px;
     cursor: url("images/cursor.gif") 35 35, auto ;
 }
