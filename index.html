@@ -15,18 +15,11 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./winter.css">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+
 </head>
 <html>
   <body style="padding-top: 10px;">
-    <div class="draggable" style="position:absolute;bottom:0;z-index: 150;">
-      <img class="draggable" src="images/jellycat-removebg-preview.png" ondragstart="return false;" width="300px">
-    </div>
-    <div class="draggable" style="position:absolute;bottom:0px;right:10px;z-index: 150;">
-      <img class="draggable" src="images/Blahaj.png" ondragstart="return false;" width="300px">
-    </div> 
-    <div class="draggable" style="position:absolute;top:0px;z-index: 150;">
-      <img class="draggable" src="images/webkinz-removebg-preview.png" ondragstart="return false;" width="300px">
-    </div>
     <script>
       (function(document) {
         'use strict';
@@ -59,14 +52,27 @@
     <script src="./oneko.js"></script>
     <div id="container">
       <div id="topBar" style="margin-bottom:-5px;position:relative;"></div>
+      <div class="window" style="width:300px;height:270px;font-size: 20px;position:fixed;bottom:40px;left:30px;transform:rotate(-3.5deg);overflow:hidden;">
+        <div class="title-bar">
+            <div class="title-bar-text">Thank You.</div>
+        </div>
+        <div class="window-body">
+          <img src="https://snowf.in/ThankYou.png" style="position: absolute;left:0px;"width="140px">
+          <div style="position:absolute;right:5px;width:160px;font-size: 18px;text-align: justify;">
+            I wanted to thank every one of you for coming here, and visiting. If you're one of my IRL friends, I love y'all so much. Thank you all for such a great life you've allowed me to have. 
+           <br>
+            <a style="text-align:right;font-size: 18px;">-Snowy</a>
+          </div>
+        </div>
+      </div>
       <div id="flex" style="position:relative;">
         <div id="tab" style="text-align:center;position:absolute;margin-top:40px;width:180px;height:215px;left:-100px;z-index: 1;border-radius: 10px;top:70px;">
-          <div class="tabs" style="background-color: #AD88C6;border: dashed darkslategray;" onclick="window.location.href = '/cats.html';">Cats</div>
-          <div class="tabs" style="background-color: #8E7AB5;border: dashed darkslategray;" onclick="window.location.href = '/updates.html';">Updates</div>
-          <div class="tabs" style="background-color: #AD88C6;border: dashed darkslategray;" onclick="window.location.href = '/music.html';">Music</div>
-          <div class="tabs" style="background-color: #8E7AB5;border: dashed darkslategray;">Art</div>
-          <div class="tabs" style="background-color: #AD88C6;border: dashed darkslategray;">Euphoria</div>
-          <div class="tabs" style="background-color: #8E7AB5;border: dashed darkslategray;">Journal</div>
+          <div class="tabs title-bar" style="color: white;border: dashed darkslategray;" onclick="window.location.href = '/cats.html';">Cats</div>
+          <div class="tabs title-bar" style="color: white;border: dashed darkslategray;" onclick="window.location.href = '/updates.html';">Updates</div>
+          <div class="tabs title-bar" style="color: white;;border: dashed darkslategray;" onclick="window.location.href = '/music.html';">Music</div>
+          <div class="tabs title-bar" style="color: white;;border: dashed darkslategray;">Art</div>
+          <div class="tabs title-bar" style="color: white;;border: dashed darkslategray;">Euphoria</div>
+          <div class="tabs title-bar" style="color: white;;border: dashed darkslategray;">Journal</div>
         </div>
         <div style="position:absolute;margin-top:400px;margin-left: -65px;width: 100px;height: 500px;transform:rotate(5deg)">
           <div style="text-align: center;">
@@ -189,18 +195,17 @@
             </a>
           </div>
         </div>
-        <aside class="border" style="margin-right:-10px;height: 400px;overflow: auto; margin-bottom:10px;text-align: center;transform:rotate(-5deg);z-index: 5;">
-          <h2 class="expand">Information</h2>
+        <aside class="window" style="margin-right:-10px;height: 400px;overflow: auto; margin-bottom:10px;text-align: center;transform:rotate(-5deg);z-index: 5;">
+         <div class="title-bar expand" style="color:white;">Information</div>
           <div class="box">
             <p>Welcome to my page. Here I show off my projects, past and current, and I also use it as an information card for myself!</p>
           </div>
           <hr>
-          <h2 class="expand">About me</h2>
+          <h4 class="expand">About me</h4>
           <p>Hello! My name is Finn or Snow, and I use She/It pronouns.</p>
           <p>Currently my main interests are <b>JACOB COLLIERR AND PORTER ROBINSONN.</b>
           </p>
           <img src="images/cat-dancing.gif" style="display:block;margin-left:auto;margin-right:auto;">
-          <h3 style=" display: block; margin-left: auto; margin-right: auto; text-align:center;">If you want to be mutuals feel free to send me a message! (I'll add your button here down below!)</h3>
           <img src="images/tumblrfox.png" width="100%">
           <img src="images/altarhuman.png" width="100%">
           <img src="images/leash.gif" width="100%">
@@ -208,10 +213,11 @@
         <div style="position:absolute; margin-top:-135px; margin-left: 430px;">
           <p style="font-family: Skincake;font-size: 60px;text-align: center;">Snow's Corner!</p>
         </div>
-        <main class="border" style="height: 700px;overflow: auto; margin-bottom:10px;z-index: 2;">
+        <main class="border window" style="height: 700px;overflow: auto; margin-bottom:10px;z-index: 2;">
+          <div class="title-bar" style="color:white;">Info</div>
           <img src="images/snowflake.gif" style="position:relative;top:0px;right:0px;float: left;" width="70px">
           <img src="images/snowflake.gif" style="position:relative;top:0px;right:0px;float: right;transform:scalex(-1)" width="70px">
-          <h1 style="text-align:center;" class="expand">About me!</h1>
+          <h3 style="text-align:center;" class="expand">About me!</h3>
           <p>Hello! I'm Snow. I am a queer musician. :3 Ive been playing with music since I was young, and am in the performing arts.</p>
           <p>I play Jazz piano!!!!.</p>
           <p>Another one of my interests is languages. I'm currently learning toki pona, Portuguese. </p>
@@ -221,7 +227,7 @@
           <p>I can play around 6 instruments, Flute is my main instrument, and Piano is my second.</p>
           <div style="display:flex;">
             <div style="float:left;order:1;width:200px;overflow: auto;height:321px;text-align: center;">
-              <h1 class="expand">My Mood</h1>
+              <h3 class="expand">My Mood</h3>
               <a href="https://www.imood.com/users/Snowenti">
                 <img src="https://moods.imood.com/display/uname-Snowenti/fg-F5EFE7/bg-4F709C/imood.gif" alt="The current mood of Snowenti at www.imood.com" style="display:block;margin-left: auto; margin-right: auto;" width="140px">
               </a>
@@ -230,9 +236,9 @@
             </div>
             <img src="images/DizzyHornsToonRotate.gif" width="280px" height="280" style="order:2;">
             <div style="float:left;order:3;width:200px;overflow: auto;height:321px;text-align: center;padding:10px;">
-              <h1 class="expand" style="text-align: center;">
+              <h3 class="expand" style="text-align: center;">
                 <a href="/updates.html">Updates</a>
-              </h1>
+              </h3>
               <div class="box">
                 <p>2.5.24</p>
                 <p>Whats up bitches I'm back, we have a new page (insane I know)!! I think it looks pretty sick tbh.</p>

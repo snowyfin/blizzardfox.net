@@ -1,16 +1,16 @@
 :root {
-    --colour-1: #FFCAD4;
-    --colour-2: #8E7AB5;
+    --colour-1: #ADD8E6;
+    --colour-2: #ADD8E6;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     background-color: var(--colour-1);
-    background-size: 100%;
+    background-size: 40%;
     background-origin: center;
     color: Black;
-    background-image: url(https://snowf.in/Castle_Town_location.png);
+    background-image: url(images/CLOUDSSS.png);
     margin-top:10px;
     cursor: url("images/cursor.gif") 35 35, auto ;
 }
@@ -81,9 +81,7 @@ aside {
     background-color: var(--colour-1);
     width: 300px;
     padding: 20px;
-    font-size: smaller;
     height: 500px;
-    color:black;
 }
 
 .comment-rotate {
@@ -98,7 +96,6 @@ aside {
     background-color: var(--colour-1);
     width: 200px;
     padding: 20px;
-    font-size: smaller;
     height: 500px
 }
 
@@ -133,19 +130,6 @@ main {
     order: 3;
 }
 
-h1,
-h2,
-h3 {
-    color: Black;
-}
-
-h1 {
-    font-size: 25px;
-}
-
-strong {
-    color: black;
-}
 
 a:link, a:visited, a:hover, a:active {
     color:black;
@@ -193,7 +177,6 @@ a:link, a:visited, a:hover, a:active {
 #topBar {
     width: 100%;
     height: 80px;
-    font-size: smaller;
 }
 
 .gallery {
@@ -255,4 +238,12 @@ a:link, a:visited, a:hover, a:active {
         border:dashed gray;
         transform: rotate(3deg);
         text-align: center;
+    }
+    
+    .return{
+        position:fixed;
+        transform:rotate(-10deg);
+        text-align:center;
+        bottom:5%;
+        color:black;
     }

@@ -16,13 +16,15 @@
   <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="winter.css">
   <link rel="stylesheet" href="tabs.css">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+
 </head>
 <html>
   <body style="padding-top: 5px;">
-    <div style="position:fixed;transform:rotate(-10deg);text-align:center;;bottom:5%; color:white;" onclick="history.back()">
+    <div class="return" onclick="history.back()">
       <h>Return to <br>your previous <br> page! </h>
     </div>
-    <script>
+   <!-- <script>
       function openCity(evt, cityName) {
         // Declare all variables
         var i, tabcontent, tablinks;
@@ -68,7 +70,7 @@
           draggable[i].addEventListener('mousedown', startDrag);
         }
       }(document));
-    </script>
+    </script>-->
     <script src="./oneko.js"></script>
     <div id="container">
       <div id="flex" style="position:relative;">
@@ -78,13 +80,13 @@
           <a style="text-align: justify;"> I listen to a lot of music, and it is something that is really important to me. I connect so many memories with music, and very much appreciate the composition and work that goes into each and every piece. </a>
       </div>
       <!--Cassette Tapes-->
-      <div style="display:flex;flex-wrap: wrap; align-content: center; padding:10px;margin-left: auto;margin-right: auto;">
+      <div class="window" style="display:flex;flex-wrap: wrap; align-content: center; padding:35px;">
         <div class="cassette-tape">
           <div class="cassette-tape-label">
             <u class="expand">Nurture</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Nurture')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/557f8d10244850be317f4d2099f85ed0.png" style="max-width: 100px;" ></button>
+            <button class="tablinks" onclick="openCity(event, 'Nurture')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/557f8d10244850be317f4d2099f85ed0.jpg" style="max-width: 100px;" ></button>
             <span class="dot"></span>
           </div>
         </div>
@@ -208,59 +210,59 @@
         <!--Cassette Descriptions-->
       </div>
       <aside id="Nurture" class="tabcontent cassette-description">
-        <h1><u>Nurture - Porter Robinson</u></h1>
+        <h4><u>Nurture - Porter Robinson</u></h4>
         <p></p>
       </aside>
       <aside id="Cheerleader" class="tabcontent cassette-description">
-        <h1><u>Cheerleader - Porter Robinson</u></h1>
+        <h4><u>Cheerleader - Porter Robinson</u></h4>
         <p></p>
       </aside>
       <aside id="Panic" class="tabcontent cassette-description">
-        <h1><u>Pawprint Panic! - Napcast</u></h1>
+        <h4><u>Pawprint Panic! - Napcast</u></h4>
         <p></p>
       </aside>
       <aside id="PMC2" class="tabcontent cassette-description">
-        <h1><u>Pale Machine 2 - Bo En</u></h1>
+        <h4><u>Pale Machine 2 - Bo En</u></h4>
         <p></p>
       </aside>
       <aside id="PMC" class="tabcontent cassette-description">
-        <h1><u>Pale Machine - Bo En</u></h1>
+        <h4><u>Pale Machine - Bo En</u></h4>
         <p></p>
       </aside>
       <aside id="DJV1" class="tabcontent cassette-description">
-        <h1><u>Djesse Volume 1 - Jacob Collier</u></h1>
+        <h4><u>Djesse Volume 1 - Jacob Collier</u></h4>
         <p></p>
       </aside>
       <aside id="DJV2" class="tabcontent cassette-description">
-        <h1><u>Djesse Volume 2 - Jacob Collier</u></h1>
+        <h4><u>Djesse Volume 2 - Jacob Collier</u></h4>
         <p></p>
       </aside>
       <aside id="DJV3" class="tabcontent cassette-description">
-        <h1><u>Djesse Volume 3 - Jacob Collier</u></h1>
+        <h4><u>Djesse Volume 3 - Jacob Collier</u></h4>
         <p></p>
       </aside>
       <aside id="InMyRoom" class="tabcontent cassette-description">
-        <h1><u>In My Room - Jacob Collier</u></h1>
+        <h4><u>In My Room - Jacob Collier</u></h4>
         <p></p>
       </aside>
       <aside id="Bewitched" class="tabcontent cassette-description">
-        <h1><u>Bewitched - Laufey</u></h1>
+        <h4><u>Bewitched - Laufey</u></h4>
         <p></p>
       </aside>
       <aside id="Beetlejuice" class="tabcontent cassette-description">
-        <h1><u>Beetlejuice Original Cast Recording</u></h1>
+        <h4><u>Beetlejuice Original Cast Recording</u></h4>
         <p></p>
       </aside>
       <aside id="Hadestown" class="tabcontent cassette-description">
-        <h1><u>Hadestown Origial Cast Recording</u></h1>
+        <h4><u>Hadestown Origial Cast Recording</u></h4>
         <p></p>
       </aside>
       <aside id="frailty" class="tabcontent cassette-description">
-        <h1><u>frailty - Jane Remover</u></h1>
+        <h4><u>frailty - Jane Remover</u></h4>
         <p><iframe width="250px" src="https://www.youtube.com/embed/FBNa4D_VjYI?si=jwZfyHi0NEApNWiv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
       </aside>
       <aside id="AHMCHB" class="tabcontent cassette-description">
-        <h1><u>And His Mother Called Him Bill - Billy Strayhorn & Duke Ellington</u></h1>
+        <h4><u>And His Mother Called Him Bill - Billy Strayhorn & Duke Ellington</u></h4>
         <p></p>
       </aside>
   </body>
