@@ -1,101 +1,40 @@
 <!DOCTYPE html>
 <head>
-  <script type='text/javascript'>
-    title = "Welcome to Snow's Corner ";
-    position = 0;
-
-    function scrolltitle() {
-      document.title = title.substring(position, title.length) + title.substring(0, position);
-      position++;
-      if (position > title.length) position = 0;
-      titleScroll = window.setTimeout(scrolltitle, 170);
-    }
-    scrolltitle();
-  </script>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+<title>Music</title>
   <link rel="stylesheet" href="winter.css">
   <link rel="stylesheet" href="tabs.css">
   <link rel="stylesheet" href="https://unpkg.com/98.css">
 
 </head>
 <html>
+  <style>
+    body{
+      background-color: black;
+      background-image: none;
+    }
+  </style>
   <body style="padding-top: 5px;">
-    <div class="return" onclick="history.back()">
-      <h>Return to <br>your previous <br> page! </h>
-    </div>
-   <!-- <script>
-      function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";}
-    </script>
-    <script>
-      (function(document) {
-        'use strict';
-        var draggable = document.getElementsByClassName("draggable"),
-          draggableCount = draggable.length,
-          i;
 
-        function startDrag(evt) {
-          var diffX = evt.clientX - this.offsetLeft,
-            diffY = evt.clientY - this.offsetTop,
-            that = this;
 
-          function moveAlong(evt) {
-            that.style.left = (evt.clientX - diffX) + 'px';
-            that.style.top = (evt.clientY - diffY) + 'px';
-          }
-
-          function stopDrag() {
-            document.removeEventListener('mousemove', moveAlong);
-            document.removeEventListener('mouseup', stopDrag);
-          }
-          document.addEventListener('mouseup', stopDrag);
-          document.addEventListener('mousemove', moveAlong);
-        }
-        for (i = 0; i < draggableCount; i += 1) {
-          draggable[i].addEventListener('mousedown', startDrag);
-        }
-      }(document));
-    </script>-->
     <script src="./oneko.js"></script>
     <div id="container">
       <div id="flex" style="position:relative;">
-        <main style="text-align: center; border:dashed gray; max-width:600px;margin-left:auto;margin-right:auto;">
-          <a style="font-family: Skincake;font-size: 40px;text-align: center;">Snowy's Music!</a>
+        <div style="text-align: left; max-width:600px;margin-right:auto;margin-top:100px;margin-bottom: 50px;">
+          <a style="font-family: Skincake;font-size: 40px;text-align: center;color: #DEAC80;margin-bottom:50px;">Snowy's Music!</a>
           <br>
-          <a style="text-align: justify;"> I listen to a lot of music, and it is something that is really important to me. I connect so many memories with music, and very much appreciate the composition and work that goes into each and every piece. </a>
+          <br>
+          <br>
+          <br>
+          <a style="text-align: justify; color: #DEAC80;"> I listen to a lot of music, and it is something that is really important to me. I connect so many memories with music, and very much appreciate the composition and work that goes into each and every piece. </a></div>
       </div>
       <!--Cassette Tapes-->
-      <div class="window" style="display:flex;flex-wrap: wrap; align-content: center; padding:35px; width: 1000px;position: relative;margin-left:auto;margin-right:auto;padding-top:10px;">
-        <div class="cassette-tape">
-          <div class="cassette-tape-label">
-            <u class="expand">Space Oddity</u>
-            <br>
-            <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Nurture')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/06077338206904418e0aa0b343705935.jpg" style="max-width: 100px;" ></button>
-            <span class="dot"></span>
-          </div>
-        </div>
+      <div class="window" style="display:flex;flex-wrap: wrap; align-content: left; padding:35px;">
         <div class="cassette-tape">
           <div class="cassette-tape-label">
             <u class="expand">Nurture</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Nurture')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/557f8d10244850be317f4d2099f85ed0.jpg" style="max-width: 100px;" ></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/557f8d10244850be317f4d2099f85ed0.jpg" style="max-width: 100px;" >
             <span class="dot"></span>
           </div>
         </div>
@@ -104,7 +43,7 @@
             <u class="expand">Cheerleader</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Cheerleader')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/Cheerleader.png" style="max-width: 100px;" ></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/Cheerleader.png" style="max-width: 100px;" >
             <span class="dot"></span>
           </div>
         </div>
@@ -113,7 +52,7 @@
             <u class="expand">Pawprint Panic!</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Panic')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/d8ef4b2eefd5e29d17a0f7559ffd6dba.jpg" style="max-width: 100px;"></button>
+           <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/d8ef4b2eefd5e29d17a0f7559ffd6dba.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -122,7 +61,7 @@
             <u class="expand">pale machine 2</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'PMC2')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/f52f5564b5a7e74534d5c154a8ac56bb.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/f52f5564b5a7e74534d5c154a8ac56bb.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -131,7 +70,7 @@
             <u class="expand">pale machine</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'PMC')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/17081e9899764852c8f6858c1304e58f.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/17081e9899764852c8f6858c1304e58f.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -140,7 +79,7 @@
             <u class="expand">Djesse Vol. 1</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'DJV1')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/58f3d51dbe0b7e93378c7cf157d22d87.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/58f3d51dbe0b7e93378c7cf157d22d87.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -149,7 +88,7 @@
             <u class="expand">Djesse Vol. 2</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'DJV2')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/59b29bc909b350fdf47fdcebf55ba1c3.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/59b29bc909b350fdf47fdcebf55ba1c3.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -158,7 +97,7 @@
             <u class="expand">Djesse Vol. 3</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'DJV3')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/7d025d74466f9f7958175b180048f12d.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/7d025d74466f9f7958175b180048f12d.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -167,7 +106,7 @@
             <u class="expand">In My Room</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'InMyRoom')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/fadfb69d67a7cb1fffba490de57823da.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/fadfb69d67a7cb1fffba490de57823da.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -176,7 +115,7 @@
             <u class="expand">Bewitched</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Bewitched')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/135ebafa90c18aa9b28972fbabbe8fc7.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/135ebafa90c18aa9b28972fbabbe8fc7.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -185,7 +124,7 @@
             <u class="expand">Beetlejuice</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Beetlejuice')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/6e10312c5df58c9505bcb09e4fd739da.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/6e10312c5df58c9505bcb09e4fd739da.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -194,7 +133,7 @@
             <u class="expand">Hadestown</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'Hadestown')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/1b310c53b438ff04ab0060bed252242d.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/1b310c53b438ff04ab0060bed252242d.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -203,7 +142,7 @@
             <u class="expand">frailty</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'frailty')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/543cc0aee1c6e279f9d8ce4d258bf16d.jpg" style="max-width: 100px;"></button>
+          <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/543cc0aee1c6e279f9d8ce4d258bf16d.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
@@ -212,67 +151,10 @@
             <u class="expand">AHMCHB</u>
             <br>
             <span class="dot"></span>
-            <button class="tablinks" onclick="openCity(event, 'AHMCHB')"><img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/44356bed10974c72cc951efcf89dff25.jpg" style="max-width: 100px;"></button>
+            <img class="cover" src="http://blizzardfox.net/gci/ALBUM-COVERS/44356bed10974c72cc951efcf89dff25.jpg" style="max-width: 100px;">
             <span class="dot"></span>
           </div>
         </div>
-        <!--Cassette Descriptions-->
       </div>
-      <aside id="Nurture" class="tabcontent cassette-description">
-        <h4><u>Nurture - Porter Robinson</u></h4>
-        <p></p>
-      </aside>
-      <aside id="Cheerleader" class="tabcontent cassette-description">
-        <h4><u>Cheerleader - Porter Robinson</u></h4>
-        <p></p>
-      </aside>
-      <aside id="Panic" class="tabcontent cassette-description">
-        <h4><u>Pawprint Panic! - Napcast</u></h4>
-        <p></p>
-      </aside>
-      <aside id="PMC2" class="tabcontent cassette-description">
-        <h4><u>Pale Machine 2 - Bo En</u></h4>
-        <p></p>
-      </aside>
-      <aside id="PMC" class="tabcontent cassette-description">
-        <h4><u>Pale Machine - Bo En</u></h4>
-        <p></p>
-      </aside>
-      <aside id="DJV1" class="tabcontent cassette-description">
-        <h4><u>Djesse Volume 1 - Jacob Collier</u></h4>
-        <p></p>
-      </aside>
-      <aside id="DJV2" class="tabcontent cassette-description">
-        <h4><u>Djesse Volume 2 - Jacob Collier</u></h4>
-        <p></p>
-      </aside>
-      <aside id="DJV3" class="tabcontent cassette-description">
-        <h4><u>Djesse Volume 3 - Jacob Collier</u></h4>
-        <p></p>
-      </aside>
-      <aside id="InMyRoom" class="tabcontent cassette-description">
-        <h4><u>In My Room - Jacob Collier</u></h4>
-        <p></p>
-      </aside>
-      <aside id="Bewitched" class="tabcontent cassette-description">
-        <h4><u>Bewitched - Laufey</u></h4>
-        <p></p>
-      </aside>
-      <aside id="Beetlejuice" class="tabcontent cassette-description">
-        <h4><u>Beetlejuice Original Cast Recording</u></h4>
-        <p></p>
-      </aside>
-      <aside id="Hadestown" class="tabcontent cassette-description">
-        <h4><u>Hadestown Origial Cast Recording</u></h4>
-        <p></p>
-      </aside>
-      <aside id="frailty" class="tabcontent cassette-description">
-        <h4><u>frailty - Jane Remover</u></h4>
-        <p><iframe width="250px" src="https://www.youtube.com/embed/FBNa4D_VjYI?si=jwZfyHi0NEApNWiv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-      </aside>
-      <aside id="AHMCHB" class="tabcontent cassette-description">
-        <h4><u>And His Mother Called Him Bill - Billy Strayhorn & Duke Ellington</u></h4>
-        <p></p>
-      </aside>
   </body>
 </html>
