@@ -89,7 +89,7 @@ aside {
   z-index: 1;
 }
 .comment-rotate:hover {
-  transform:rotate(-10deg);
+  transform:rotate(5deg);
 }
 
 .tab {
