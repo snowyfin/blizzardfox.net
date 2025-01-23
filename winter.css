@@ -230,26 +230,6 @@ a:link, a:visited, a:hover, a:active {
       display: inline-block;
     }
 
-<<<<<<< HEAD
-    .cassette-description {
-      z-index:99999;
-      background-color: var(--colour-1);
-      position: absolute;
-      right:100px;
-      top:200px;
-      border:dashed gray;
-      transform: rotate(3deg);
-      text-align: center;
-  }
-  
-  .return{
-      position:fixed;
-      transform:rotate(-10deg);
-      text-align:center;
-      bottom:5%;
-      color:black;
-  }
-=======
     .dot {
         height: 40px;
         width: 40px;
@@ -455,4 +435,3 @@ a:link, a:visited, a:hover, a:active {
         }
     }
     
->>>>>>> parent of 6c6f244 (Added Stars X3)
