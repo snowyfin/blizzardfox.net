@@ -1,5 +1,5 @@
 # Snow's Corner
-Welcome to my site! I use this for myself, as a directory for all of my acomplishments, and to keep my art alive and it acts as an art project of itself.
+Welcome to my site! I use this for myself as a directory for all of my acomplishments, and to keep my art alive and it acts as an art project of itself.
 
 ## License
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
