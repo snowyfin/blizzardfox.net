@@ -13,7 +13,7 @@ body {
   color: Black;
   background-image: url(images/CLOUDSSS.png);
   margin-top:10px;
-  cursor: url("images/cursor.gif") 35 35, auto ;
+  cursor: url("./!f/cursor.gif") 35 35, auto ;
 }
 
 * {
@@ -33,12 +33,12 @@ body {
 
 @font-face {
   font-family: Skincake;
-  src: url(Skincake/Skincake.ttf);
+  src: url(./!g/Skincake.ttf);
 }
 
 @font-face {
   font-family: MoonFlower;
-  src: url(http://blizzardfox.net/gci//files/FONTS/MoonFlower/MoonFlower.ttf);
+  src: url(http://blizzardfox.net/gci/files/FONTS/MoonFlower/MoonFlower.ttf);
 }
 
 #container {

@@ -6,10 +6,10 @@ body {
     background-color: #CD5C08;
     background-size: 65px;
     color: #000000;
-    background-image: url(images/stardchicken.png);
+    background-image: url(./!f/stardchicken.png);
     background-size:45%;
     margin-top:10px;
-    cursor: url("images/cursor.gif") 35 35, auto ;
+    cursor: url("./!f/cursor.gif") 35 35, auto ;
 }
 
 * {
