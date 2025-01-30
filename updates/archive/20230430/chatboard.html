@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<head>
+	<title>Snow's Page :3</title>
+</head>
+<html>
+	<body>
+			<div id="container"><div id="topBar">Cat book :3</div>
+			<div id="headerArea">
+				<nav id="navbar">
+					<ul>
+                        <li><a href="index.html"><img src="images/Home.gif" height="35px"></a></li>
+                        <li><a href="cats.html"><img src="images/running_cat_sil.gif" height="35px"></a></li>
+						<li><a href="chatboard.html"><img src="images/book1.gif" height="35px"></a></li>
+                        <li><a href="music.html"><img src="images/music.gif" height="35px"></a></li>
+                        <li><a href="updates.html"><img src="images/update.gif" height="35px"></a></li>
+                        <li><a href="art.html"><img src="images/palette.gif" height="35px"></a></li>
+                    </ul>
+					</nav>
+			</div>
+
+			<div id="flex">
+				<main>
+                      <img src="images/book1.gif" style="display: block; margin: auto;">
+					<h1>Guestbook
+                    </h1>
+					<p><strong>Welcome to the guest book!</strong></p>
+                    <div class="box" style="text-align:center">
+                    <!-- begin wwww.htmlcommentbox.com -->
+                    <div id="HCB_comment_box" style="display: block; margin-left: auto; margin-right: auto;"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+                    <!-- end www.htmlcommentbox.com -->
+                 </div>
+				</main>
+				
+			</div>
+
+			</div>
+			<!-- THIS IS THE CSS !-->
+			<style>
+
+				:root {
+					--body-bg-image: url(images/background.gif);
+				
+					/* colors */
+					--content: #B85C38;
+				}
+				
+				
+				
+				@font-face {
+					font-family: Nunito;
+					src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+				}
+				
+				@font-face {
+					font-family: Nunito;
+					src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+					font-weight: bold;
+				}
+				
+				@font-face {
+					font-family: Nunito;
+					src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+					font-style: italic;
+				}
+				
+				@font-face {
+					font-family: Nunito;
+					src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+					font-style: italic;
+					font-weight: bold;
+				}
+				
+				body {
+					font-family: 'Nunito', sans-serif;
+					margin: 0;
+					background-color: #2D2424;
+					background-size: 65px;
+					color: #E0C097;
+					background-image: var(--body-bg-image);
+				}
+				
+				* {
+					box-sizing: border-box;
+				}
+				
+				#container {
+					max-width: 900px;
+				 
+					margin: 0 auto;
+				   
+				}
+				
+				
+				#container a {
+					color: #B85C38;
+					font-weight: bold;
+				
+				}
+				
+				#header {
+					width: 100%;
+					background-color: #A7727D;
+				
+					height: 150px;
+				
+					background-image: var(--header-image);
+					background-size: 100%;
+				}
+				
+				
+				#navbar {
+					height: 50px;
+					background-color: #698269;
+					width: 100%;
+					margin-bottom: 10px;
+				}
+				
+				#navbar ul {
+					display: flex;
+					padding: 0;
+					margin: 0;
+					list-style-type: none;
+					justify-content: space-evenly;
+				}
+				
+				#navbar li {
+					padding-top: 10px;
+				}
+				
+				#navbar li a {
+					color: #13092D;
+					font-weight: 800;
+					text-decoration: none;
+				}
+				
+				#navbar li a:hover {
+					color: #AA5656;
+					text-decoration: underline;
+				}
+				
+				#flex {
+					display: flex;
+				}
+				
+				
+				aside {
+					background-color: #5C3D2E;
+					width: 200px;
+					padding: 20px;
+					font-size: smaller;
+				}
+				
+				
+				
+				main {
+					background-color: #2D2424;
+					flex: 1;
+					padding: 20px;
+					order: 2;
+				}
+				
+				
+				
+				*/ #leftSidebar {
+					order: 1;
+				}
+				
+				#rightSidebar {
+					order: 3;
+				}
+				
+				footer {
+					background-color: #13092D;
+					width: 100%;
+					height: 40px;
+					padding: 10px;
+					text-align: center;
+				}
+				
+				h1,
+				h2,
+				h3 {
+					color: #B85C38;
+				}
+				
+				h1 {
+					font-size: 25px;
+				}
+				
+				strong {
+					color: #AA5656;
+				}
+				
+				.box {
+					background-color: #2E4F4F;
+					border: 1px solid #AA5656;
+					padding: 10px;
+				}
+				
+				
+				#topBar {
+					width: 100%;
+					height: 30px;
+					padding: 10px;
+					font-size: smaller;
+					background-color: #2E4F4F;
+				}
+				
+				
+				
+				@media only screen and (max-width: 800px) {
+					#flex {
+						flex-wrap: wrap;
+					}
+				
+					aside {
+						width: 100%;
+					}
+				
+				 
+					main {
+						order: 1;
+					}
+				
+					#leftSidebar {
+						order: 2;
+					}
+				
+					#rightSidebar {
+						order: 3;
+					}
+				
+					#navbar ul {
+						flex-wrap: wrap;
+					}
+				}
+				
+						</style>
+	</body>
+</html>
+
