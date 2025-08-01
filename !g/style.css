@@ -133,3 +133,42 @@ a:link, a:visited, a:hover, a:active {
   .gallery img {
     border: 1.5px solid darkgoldenrod;
     margin: 2px;}
+
+    .marquee {
+  width: 450px;
+  line-height: 50px;
+  background-color: red;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+.marquee-down {
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.marquee-down p {
+  display: inline-block;
+  padding-top: 100%;
+  animation: marquee 2s linear infinite;
+}
+@keyframes marquee-down {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(0, -100%); }
+}
