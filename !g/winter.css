@@ -107,7 +107,6 @@ a:link, a:visited, a:hover, a:active {
 }
 .box {
   background-color: 87C4FF;
-  border: 1px solid white;
   padding: 10px;
   color: black;
 }
