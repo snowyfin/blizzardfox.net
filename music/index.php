@@ -44,7 +44,7 @@
               echo '<div class="cassette-tape">
                 <div class="cassette-tape-label">
                   <span class="dot"></span>
-                  <img class="cover" src="'.$image.'" style="max-width: 190px;">
+                  <img class="cover" src="'.$image.'" style="max-width: 180px;">
                   <span class="dot"></span>
                 </div>
               </div>';
