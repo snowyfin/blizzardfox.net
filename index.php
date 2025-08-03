@@ -188,7 +188,7 @@
         <div>
           <img src="/cats/!f/<?php echo $randomImage; ?>" width="100px" style="position:absolute;float:left;width: 270px;margin-top:20px;">
           <?php 
-            $imagesDir = 'images/tips/';
+            $imagesDir = '/cats/!f/';
             $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
             $randomImage = $images[array_rand($images)];
             ?>
