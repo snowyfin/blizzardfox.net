@@ -14,13 +14,13 @@
   </style>
 
   <body style="padding-top: 5px;">
-    <div class="overlay" style="bottom: 0; right: 0; color:black;">
+    <div class="overlay" style="bottom: 0; right: 0; color:black;position:fixed;">
       <img src="./!f/vibri_eepy.gif" width="400px">
     </div>
-    <div class="overlay" style="bottom: 0; left: 0; color:white;">
-      <div class="return" onclick="history.back()">
+    <div class="overlay" style="position:fixed; top: 10px; left: 10px; color:black;">
+      <div class="return">
         <h>
-          <b>Return to <br>your previous <br> page! </b>
+          <img src="/!f/spinningCD.gif" width="40px"onclick="history.back()">
         </h>
       </div>
     </div>
