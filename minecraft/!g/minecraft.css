@@ -23,11 +23,11 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
-  background-color: var(--colour-1);
+  background-color: #555555;
   background-size: 4%;
   background-origin: center;
   background-repeat:repeat;
-  color: Black;
+  color: #555555;
   background-image: url(/!f/bg_main.png);
   background-attachment: fixed;
   cursor: url("/!f/gam1062.cur") 0 0, auto ;
