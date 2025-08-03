@@ -24,7 +24,7 @@
         $images = glob($dirname."*.jpg");
           
         foreach($images as $image) {
-              echo '<div><user style='--icon: url(https://cdn.discordapp.com/avatars/741823940061560944/8730cfd2557617a015a8cb776317f2a8?size=1024)'>Ashlyn</user></div>
+              echo '<div><user style='--icon: url('/!f/8730cfd2557617a015a8cb776317f2a8.jpeg')'>Ashlyn</user></div>
       <div><img src="'.$image.'"></div>';
         }
         ?>
