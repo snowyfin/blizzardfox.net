@@ -185,7 +185,14 @@
             <p style="font-size: 18px;text-align:center;">I play Jazz piano!!!!.</p>
             <p style="font-size: 18px;text-align:center;">Another one of my interests is languages. I'm currently learning toki pona, and Portuguese. </p>
           </div>
-           <div class="border window" style="margin-bottom: 10px;">
+        <div>
+          <img src="/cats/!f/<?php echo $randomImage; ?>" width="100px" style="position:absolute;float:left;width: 270px;margin-top:20px;">
+          <?php 
+            $imagesDir = 'images/tips/';
+            $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+            $randomImage = $images[array_rand($images)];
+            ?>
+          <div class="window" style="margin-bottom: 10px;margin-right:20px;margin-left:280px;">
             <div class="title-bar" style="color:white;font-size: 18px;">
               <div class="title-bar-text">Creating</div>
             </div>
@@ -193,6 +200,8 @@
             <p style="font-size: 18px;text-align:center;">I have three cats named Piper, Sparkle, and Fiona!!I've had Sparkle and Piper for about 5 years, and we got Fiona in 2023.</p>
             <p style="font-size: 18px;text-align:center;">Occasionally I paint stuff, but my main art form is in the performing arts. I perform Piano in a jazz ensemble, and I've been in the pit orchestra for two musicals. (I recently performed in a Jazz ensemble playing really hard repetoir!)</p>
             <p style="font-size: 18px;text-align:center;">I can play around 6 instruments, Flute is my main instrument, and Piano is my second.</p>
+
+          </div>
           </div>
           <div class="window" style="margin-left:20px;margin-right:130px;margin-bottom: 10px;">
             <div class="title-bar">
