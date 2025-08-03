@@ -20,17 +20,10 @@
       <div class='dcord2'>
         <div><user style='--icon: url(/!f/8730cfd2557617a015a8cb776317f2a8.jpeg)'>Ashlyn</user></div>
         <?php 
-
         $dirname = "./!f/";
-
         $images = glob($dirname."*.jpg");
-
-
-
         foreach($images as $image) {
-
-              echo '<div class="box" style="text-align: center;width:200px;"><img src="'.$image.'"></div>';
-
+              echo '<div class="box" style="text-align: center;"><img src="'.$image.'" style="width:200px;"></div>';
         }
 
         ?>
