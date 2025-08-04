@@ -17,17 +17,15 @@
     <script src="/!g/oneko.js"></script>
     <div id="container" style="margin-top:0px;">
       <div class="dcordchannel">Cat Wall<div>Welcome to to the wall of cats, I'll add as many photos I take here of my cats :3</div></div>
-      <div class='dcord2'>
-        <div><user style='--icon: url(https://cdn.discordapp.com/avatars/741823940061560944/8730cfd2557617a015a8cb776317f2a8?size=1024)'>Ashlyn</user></div>
-        <div>
-        <?php 
+        <div class='dcord2'>
+        <div style="z-index: 129059382;"><user style='--icon: url(https://cdn.discordapp.com/avatars/741823940061560944/8730cfd2557617a015a8cb776317f2a8?size=1024);'>Ashlyn</user><time><?php echo exec('date '+%r''); ?></time> <?php 
         $dirname = "./!f/";
         $images = glob($dirname."*.jpg");
         foreach($images as $image) {
               echo '<div style="text-align: left;"><img src="'.$image.'" style="width:200px;"></div>';
         }
 
-        ?>
+        ?></div>
       </div>
     </div>  
   </body>
