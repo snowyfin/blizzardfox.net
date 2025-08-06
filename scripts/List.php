@@ -1,4 +1,4 @@
 <?php
     chdir('../');
-    echo(shell_exec('ls -a'));
+    echo "<pre>" . shell_exec('ls -a') . "</pre>";
 ?>
