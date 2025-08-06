@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="697b8330-b106-4130-ae36-36911bf13aed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/git-history.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/git-history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/List.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/List.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +30,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "PHP Script.List.php.executor": "Run",
     "PHP Script.git-history.php.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "test",
     "last_opened_file_path": "/home/finn-conroy/Documents/GitHub/blizzardfox.net",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -52,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754418542528</updated>
       <workItem from="1754418543579" duration="79000" />
-      <workItem from="1754514225476" duration="301000" />
+      <workItem from="1754514225476" duration="547000" />
     </task>
     <servers />
   </component>
