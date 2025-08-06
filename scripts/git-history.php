@@ -1,6 +1,6 @@
 <p>
     <?php 
     chdir('../');
-    echo(shell_exec('git log --all --decorate --oneline --graph'));
+    echo "<pre>" . shell_exec('git log --all --decorate --oneline --graph') . "</pre>";
 ?>
 </p>
