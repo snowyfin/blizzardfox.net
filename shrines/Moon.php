@@ -16,7 +16,7 @@
                     </div>
                 </aside>
                 <main style="position:relative;height: 100%;width:500px;text-align: center;">
-                    <div style="display: inline-block;">
+                    <div style="display: inline-block; z-index:1000;">
                         <?php 
                             chdir('../scripts/');
                             $command = 'python3 moonphase.py';
