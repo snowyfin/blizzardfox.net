@@ -33,7 +33,7 @@ body {
   background-color: black;
   background-size: 30%;
   background-origin: center;
-  color: Black;
+  color: White;
   background-image: url(../!f/Stars.gif);
   background-attachment: fixed;
   cursor: url("/!f/gam1062.cur") 0 0, auto ;
@@ -53,7 +53,7 @@ body {
  
 }
 #container a {
-  color: black;
+  color: white;
   font-weight: bold;
 
 }
