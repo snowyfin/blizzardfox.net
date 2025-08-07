@@ -1,0 +1,12 @@
+IndexStyleSheet /blizzardfox.css
+HeaderName /blizzardfox_header.html
+IndexOptions \
+	FancyIndexing \
+    Charset=UTF-8 \
+	FoldersFirst \
+	HTMLTable
+IndexIgnore \
+	.htaccess \
+	blizzardfox.css \
+	blizzardfox_header.html \
+	dizzyhorns.webp
