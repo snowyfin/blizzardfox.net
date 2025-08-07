@@ -16,7 +16,7 @@
                     </div>
                 </aside>
                 <main style="position:relative;height: 100%;width:500px;text-align: center;">
-                    <div style="display: inline-block; z-index:1000;">
+                    <div style="display: inline-block;z-index:2000;" onclick="history.back()>">
                         <?php 
                             chdir('../scripts/');
                             $command = 'python3 moonphase.py';
@@ -24,21 +24,21 @@
 
                             foreach ($output as $line) {
                                 if (strpos($line, 'New Moon') !== false) {
-                                    echo "<img src='!f/NewMoon.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/NewMoon.png' style=\"margin-top:150px; width: 300px;\"";
                                 } else  if (strpos($line, 'Waxing Crescent') !== false){
-                                    echo "<img src='!f/WaxingCrescent.png' style=\"margin-top:150px; width: 300px;\"  onclick=\"history.back()>\"";
+                                    echo "<img src='!f/WaxingCrescent.png' style=\"margin-top:150px; width: 300px;\"";
                                 } else  if (strpos($line, 'First Quarter') !== false){
-                                    echo "<img src='!f/FirstQuarter.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/FirstQuarter.png' style=\"margin-top:150px; width: 300px;\"";
                                 } else  if (strpos($line, 'Waxing Gibbous') !== false){
-                                    echo "<img src='!f/WaxingGibbous.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/WaxingGibbous.png' style=\"margin-top:150px; width: 300px;\"";
                                 } else  if (strpos($line, 'Full Moon') !== false){
-                                    echo "<img src='!f/FullMoon.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/FullMoon.png' style=\"margin-top:150px; width: 300px;\" ";
                                 } else  if (strpos($line, 'Waning Gibbous') !== false){
-                                    echo "<img src='!f/WaningGibbous.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/WaningGibbous.png' style=\"margin-top:150px; width: 300px;\"";
                                 } else  if (strpos($line, 'Last Quarter') !== false){
-                                    echo "<img src='!f/LastQuarter.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/LastQuarter.png' style=\"margin-top:150px; width: 300px;\"";
                                 } else  if (strpos($line, 'Waning Crescent') !== false){
-                                    echo "<img src='!f/WaningCrescent.png' style=\"margin-top:150px; width: 300px;\" onclick=\"history.back()>\"";
+                                    echo "<img src='!f/WaningCrescent.png' style=\"margin-top:150px; width: 300px;\"";
                                 }
                             }?>
                     </div>
