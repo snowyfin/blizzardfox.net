@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>The Moon</title>
     <link rel="stylesheet" href="./!g/moon.css">
 </head>
 <body>
