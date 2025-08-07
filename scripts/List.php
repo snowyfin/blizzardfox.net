@@ -1,4 +1,4 @@
 <?php
-    chdir('../');
+    chdir('/');
     echo "<pre>" . shell_exec('tree ./') . "</pre>";
 ?>
