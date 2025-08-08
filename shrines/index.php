@@ -47,7 +47,8 @@
                 foreach($pages as $page) {
                     if($page != "index.php") {
                         $page = str_replace(".php", "", $page);
-                        echo '<a href="'.$page.'.php">'.$page.'</a><br>';
+                        $cleanedOutput = ltrim($page, "./");
+                        echo '<a href="'.$page.'.php">'.$cleanedOutput.'</a><br>';
                     }
                 }
             ?>
