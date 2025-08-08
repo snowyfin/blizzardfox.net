@@ -45,7 +45,7 @@
                 $pages = glob($dirname."*.php");
 
                 foreach($pages as $page) {
-                    if($page != "index.php") {
+                    if(basename($page) != "index.php") {
                         $page = str_replace(".php", "", $page);
                         $cleanedOutput = ltrim($page, "./");
                         echo '<a href="'.$page.'.php">'.$cleanedOutput.'</a><br>';
