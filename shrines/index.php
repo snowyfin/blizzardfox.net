@@ -48,7 +48,8 @@
                     if(basename($page) != "index.php") {
                         $page = str_replace(".php", "", $page);
                         $cleanedOutput = ltrim($page, "./");
-                        echo '<a href="'.$page.'.php">'.$cleanedOutput.'</a><br>';
+                        $spaceRmv = str_replace("_", " ", $cleanedOutput);
+                        echo '<a href="'.$page.'.php">'.$spaceRmv.'</a><br>';
                     }
                 }
             ?>
