@@ -8,10 +8,10 @@
     <body>
         <div id="container">
             <div  id="flex"  style="position:relative;">
-                <aside id="leftSidebar" style="position:relative;height: 100%;width:300px;color:goldenrod;">
+                <aside id="leftSidebar" style="position:relative;height: 100%;width:300px;color:goldenrod;text-align:center;">
                 </aside>
                 <main style="position:relative;height: 100%;width:500px;text-align: center;">
-                    <div style="display:inline-block;text-align: left;">
+                    <div style="display:block;text-align: left;left:25%;right:25%;width:50%;">
                     <pre>
    `,.      .   .        *   .    .      .  _    ..          .
      \,~-.         *           .    .       ))       *    .
@@ -38,7 +38,7 @@
  gpyy                    //=========\\
             </pre>
             </div>
-            <div style="display: inline-block;">Welcome to my shrines<br>Here I have pages to things that have made my life where it is today. </div>
+            <div style="display: block;">Welcome to my shrines<br>Here I have pages to things that have made my life where it is today. </div>
             <br><br>
             <?php
                 $dirname = "./";
