@@ -1,5 +1,5 @@
 # Snow's Corner
-Welcome to my site! I use this for myself as a directory for all of my acomplishments
+Welcome to my site! I use this as a directory for all of my accomplishments
 
 and to keep my art alive and it acts as an art project of itself.
 
